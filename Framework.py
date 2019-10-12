@@ -6,7 +6,7 @@ import os
 
 ##test images
 image1 = 'Screen Shot 2019-07-18 at 2.30.23 PM.png'
-image2 = '/Users/fcl/desktop/DNAPrinting/CROPPED-zhe'
+image2 = '/Users/fcl/desktop/DNAPrinting/CROPPED-zhe/蠢 Tom 蠢'
 
 
 #find perceived brightnes as a standard
