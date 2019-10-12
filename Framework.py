@@ -6,8 +6,7 @@ import os
 
 
 ##test images
-image1 = 'Screen Shot 2019-07-18 at 2.30.23 PM.png'
-image2 = '/Users/fcl/desktop/DNAPrinting/CROPPED-zhe/帅 Tom 聪明'
+image1 = 'a.png'
 
 
 #find perceived brightnes as a standard
@@ -24,8 +23,6 @@ def standardBrightness(im):
             sumBrightness+=math.sqrt(0.241*(r**2) + 0.691*(g**2) + 0.068*(b**2))
     standardBrightness = sumBrightness/numberofpixels
     return standardBrightness
-
-
 
 
 #find the designated block, check whether its brightness is higher than the standard
@@ -58,15 +55,15 @@ if __name__ == "__main__":
     outputArray = [20, 40]
 
     #Parametrisation
-    imgwidth, imgheight = im.size
+    imgwidth, imgheight = im.size()
     boxHeight = imgheight//40
     boxWidth = imgwidth//20
 
     #for loop that produces the output array: each block should have its right true or false
     #for i,j:
-    for x0 in range(0, 20):
-        for y0 in range(0, 40):
-            outputArray[x0][y0] = processBlock(im, x0 , y0, standard) #true or false
+    # for x0 in range(0, 20):
+    #     for y0 in range(0, 40):
+    #         outputArray[x0][y0] = processBlock(im, x0 , y0, standard) #true or false
 
     #print array
     for x0 in range(0, 20):
